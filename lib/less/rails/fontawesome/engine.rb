@@ -14,7 +14,7 @@ module Less
         end
 
         initializer 'less-rails-fontawesome.action_controller' do |app|
-          ActiveSupport.on_load :action_controller do
+          ActiveSupport.on_load :abstract_controller do
             helper Less::Rails::Fontawesome::LinkHelper
           end
         end
